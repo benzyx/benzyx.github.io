@@ -1,0 +1,85 @@
+
+body{
+    font-family: "Raleway", sans-serif;
+    padding-top: 70px;
+}
+
+h1 {
+    padding: 20px;
+}
+
+.nav-style{
+    border:0;
+    border-radius: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    letter-spacing: 3px;
+    font-family: "Raleway", sans-serif;
+    font-size: 1.2em;
+    font-weight: 600;
+    background-color: #333333;
+}
+
+
+.open{
+    background-color: #3f3f3f !important;
+}
+
+.dropdown-menu{
+    background-color: #444444;
+}
+
+.navbar-brand{
+     color: #ffcc00 !important;
+}
+
+.navbar-default li a{
+     color: #ffcc00 !important;
+}
+
+.navbar-default li a:hover{
+     background-color: #444444 !important;
+}
+.section1 img{
+    padding: 40px 0px 40px 0px;
+}
+
+
+.section1{
+    background-color: #ffe066;
+    color: #0f0f0f;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size:2em;
+    padding-top:3%;
+    padding-bottom:5%;
+}
+
+.section1 p{
+    
+    font-size: 18px;
+}
+
+
+.section2{
+    background-color: #99bbff;
+    color: #0f0f0f;
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    font-size:2em;
+    padding-top:3%;
+    padding-bottom:5%;
+}
+
+
+.section2 p{
+    
+    font-size: 18px;
+}
+
+.img-responsive {
+    margin: 0 auto;
+}
+
+
