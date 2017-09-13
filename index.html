@@ -6,27 +6,67 @@
         </title>
         <meta charset="UTF-8">
         
+        <!-- Raleway -->
         <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-
         <link rel="stylesheet" type="text/css" href="title.css"/>
 
+        <!-- You know how this works -->
+        <script type="text/javascript" src="title.js"> </script>
+
     </head>
+
     <body>
-    	<div class="center">
-    		<div class="name"> Ben Zhang </div>
-    		<div class="title-links">
-    			<div> 
-    				<a href="blog/"> Blog </a>
-    			</div>
-    			<div>
-    				<a href="resume.pdf"> Resume </a>
-    			</div>
-    			<div>
-    				<a href="contact.html"> Contact </a>
-    			</div>
-    		</div>
-    	</div>
+        <div class="center">
+            <div id="menu">
+                <div id="name"> Ben Zhang </div>
+                <div id="title-links">
+                    <div>
+                        <a onclick="toggleAbout()"> About </a>
+                    </div> 
+                    <div> 
+                        <a href="blog/"> Blog </a>
+                    </div>
+                    <div>
+                        <a href="resume.pdf"> Resume </a>
+                    </div>
+                    <div>
+                        <a href="https://github.com/benzyx"><i class="fa fa-github" style="font-size:24px"></i></a>
+                        <a href="https://www.linkedin.com/in/yxbzhang/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
+                        <a href="https://instagram.com/bnzyx"><i class="fa fa-instagram" style="font-size:24px"></i></a>
+                        <a href="mailto:frenzybenzy@gmail.com"><i class="fa fa-envelope" style="font-size:24px"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div id="about">
+                <p>
+                    I'm Ben. I'm a third year CS student at the University of Waterloo. I am particularly interested in competitive programming, deep learning, and finance.
+                </p>
+
+                <p> 
+                    I also go by <b>Yi Xiao Zhang</b>, <b>kuroba</b>, <b>benzyx</b> and <b>frenzybenzy</b>.
+                </p>
+
+                <p>
+                    I've worked on optimizing the Caffe2 deep learning framework during my last internship at Facebook. Before that, I was creating new features for business owners on Yelp.
+                </p>
+
+                <p>
+                    I come from a competitive programming background. In high school, I represented Canada at the International Olympiad in Informatics in 2014 and 2015. I still occasionally compete on Codeforces.
+                </p>
+
+                <p>
+                    I'm trying to write more, and so I've started a blog. Check it out <a href="blog/">here</a>.
+                </p>
+
+                <div>
+                    <a onclick="toggleAbout()"> > Back </a>
+                </div>
+            </div> 
+         </div>
     </body>
 </html>
