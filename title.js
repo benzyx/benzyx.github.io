@@ -34,5 +34,11 @@ async function toggleAbout() {
 		}, 200);
 		
 	}
-
 }
+
+var togglers = document.getElementsByClassName("toggle-about");
+for (var i = 0; i < togglers.length; i++) {
+	togglers[i].addEventListener('click', toggleAbout, false);
+}
+
+
