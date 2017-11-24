@@ -73,7 +73,7 @@ window.addEventListener('resize', function(e){
 });
 
 window.addEventListener("load", function(event){
-    console.log("Loaded!");
+    //console.log("Loaded!");
     var canvas = document.getElementById('painting');
     var ctx = canvas.getContext('2d');
     ctx.canvas.width = window.innerWidth;
@@ -101,8 +101,8 @@ window.addEventListener("load", function(event){
         setInterval(function() {
             for (var i = 0; i < iters; i++) {
                 coord = paint(ctx, coord, data);
-                console.log(coord.x);
-                console.log(coord.y);
+                //console.log(coord.x);
+                //console.log(coord.y);
             }
         }, 1);
     //}
@@ -110,4 +110,10 @@ window.addEventListener("load", function(event){
     //imageObj.src = "me2.png";
 
 });
+
+
+function conway(ctx, data){
+
+
+}
 
