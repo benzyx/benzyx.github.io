@@ -112,8 +112,11 @@ window.addEventListener("load", function(event){
 });
 
 
-function conway(ctx, data){
+function conway(ctx, grid){
+    
+    for (int i = 0; i < n; i++ ){
 
+    }
 
 }
 
