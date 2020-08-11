@@ -1,73 +1,60 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>
-            Ben Zhang
-        </title>
-        <meta charset="UTF-8">
-        
-        <!-- FontAwesome -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
-        <link rel="shortcut icon" type="image/png" href="favicon.ico"/>
-        <link rel="stylesheet" type="text/css" href="title.css"/>
-    </head>
+---
+layout: default
+title: Home
+---
 
-    <body>
-        <canvas id="painting"></canvas>
-        <div class="center">
-            <div id="menu">
-                <div id="name"> Ben Zhang </div>
-                <div id="title-links">
-                    <div>
-                        <a class="toggle-about"> About </a>
-                    </div> 
-                    <div> 
-                        <a href="blog/"> Blog </a>
-                    </div>
-                    <div>
-                        <a href="ResumeRES.pdf"> Resume </a>
-                    </div>
-                    <div>
-                        <a href="https://github.com/benzyx"><i class="fa fa-github" style="font-size:24px"></i></a>
-                        <a href="https://www.linkedin.com/in/yxbzhang/"><i class="fa fa-linkedin-square" style="font-size:24px"></i></a>
-                        <a href="https://instagram.com/bnzyx"><i class="fa fa-instagram" style="font-size:24px"></i></a>
-                        <a href="mailto:frenzybenzy@gmail.com"><i class="fa fa-envelope" style="font-size:24px"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div id="about">
-                <p>
-                    <b> Hey. </b>
-                </p>
+<div class="posts">
+  {% for post in paginator.posts %}
+  <article class="post">
+<h1 class="post-title">
+<a href="{% if post.link %}{{ post.link }}{% else %}{{ post.url }}{% endif %}">{{ post.title | smartify }}</a>{% if post.link %}<span class="link-arrow"> &rarr;</span>{% endif %}
+</h1>
+    <time datetime="{{ post.date | date_to_xmlschema }}" class="post-date">{{ post.date | date_to_long_string: "ordinal", "US" }}
+    {% if post %}
+    {% assign categories = post.categories %}
+    {% else %}
+    {% assign categories = page.categories %}
+    {% endif %}
+    {% for category in categories %}
+    in <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category}}</a>
+    {% unless forloop.last %}&nbsp;{% endunless %}
+    {% endfor %}
+    {%- if post.last_modified_at -%}
+    <br><i>Last updated on: {{ post.last_modified_at | date_to_long_string: "ordinal", "US" }}</i>
+    {%- endif -%}
+    </time>
 
-                <p>
-                    I'm Ben. I'm a third year CS student at the University of Waterloo. I am interested in deep learning, C++ programming, and quantitative finance.
-                </p>
+<span class="permalink">
+{% if post.link %}
+<a href="{{ post.url }}">Permalink</a>
+{% endif %}
+</span>
 
-                <p> 
-                    I also go by <b>Yi Xiao Zhang</b>, <b>kuroba</b>, and <b>benzyx</b>.
-                </p>
+    {{ post.content | smartify }}
+	
+  <br>
+  <div class="tag-list">
+  {% if post %}
+  {% assign tags = post.tags %}
+  {% else %}
+  {% assign tags = page.tags %}
+  {% endif %}
+  {% for tag in tags %}
+  <a href="{{site.baseurl}}/tags/#{{tag|slugize}}">#{{tag}}</a>
+  {% unless forloop.last %}&nbsp;{% endunless %}
+  {% endfor %}
+  </div>
+	
+  </article>
+  {% endfor %}
+</div>
 
-                <p>
-                    I'm currently an Undergraduate Research Assistant under Professor Pascal Poupart, at the University of Waterloo, while completing my Bachelor's Degree. We are building a PyTorch library for <a href="https://arxiv.org/abs/1202.3732">Sum-Product Networks</a>.
+<div class="PageNavigation">
+  {% if paginator.next_page %}
+    <a class="prev" href="{{ paginator.next_page_path | prepend: site.baseurl }}">← Older</a>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="next" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer →</a>
+  {% endif %}
+</div>
 
-                    In the past, I've worked at MemSQL, as a Software Engineering Intern. Before that, I worked on developing a trading platform at Citadel Securities, and contributed to optimizing the <a href="http://caffe2.ai">Caffe2</a> deep learning framework during my internship at Facebook.
-                </p>
-
-                <p>
-                    I come from a competitive programming background. I represented the University of Waterloo at ACM-ICPC between 2015 - 2017, and represented Canada at the International Olympiad in Informatics in 2014 and 2015. In my spare time, I contribute to the community by writing problems for the Canadian Computing Competition and the <a href="http://wcipeg.com">WCIPEG Judge</a>. I still occasionally compete on <a href="http://codeforces.com/profile/kuroba">Codeforces</a>.
-                </p>
-
-                <p>
-                    I'm trying to write more, and so I've started a blog. Check it out <a href="blog/">here</a>.
-                </p>
-
-                <div>
-                    <a class="toggle-about"> > Back </a>
-                </div>
-            </div> 
-         </div>
-        <script type="text/javascript" src="title.js"> </script>
-    </body>
-</html>

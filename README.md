@@ -1,9 +1,3 @@
-# benzyx.github.io
+# Static site revamp.
 
-It's my site.
-
-Trying this minimalistic style.
-
-Don't judge.
-
-Thanks, y'all.
+Found this really cool dark theme, [Noir](https://github.com/essentialenemy/noir) and decide to try it out.
