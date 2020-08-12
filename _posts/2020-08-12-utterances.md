@@ -20,4 +20,6 @@ It was incredibly easy to set it up in Jekyll, as you simply add a script tag to
 </script>
 {% endhighlight %}
 
-You can customize the format of issues created on the Utterances homepage, and they will customize their own script for you to use. Quick and easy.
+You can customize the format of issues created on the Utterances homepage, and they will customize their own script for you to use. You'll also have to install the Utterances app on your Github repo to get commenting to work, but Utterances will prompt you when you try to comment below, so it's hard to forget.
+
+Quick and easy.
