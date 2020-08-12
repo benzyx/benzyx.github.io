@@ -11,14 +11,14 @@ layout: page
 
 ### Undergraduate Internships
 
-* Quantitative Researcher @ Citadel
+* Quantitative Researcher @ Citadel, Data Strategies
 * Core Developer @ Hudson River Trading
 * Undergraduate Research @ University of Waterloo
  	- Sum Product Networks, under Prof. Pascal Poupart
-* Software Engineering @ MemSQL
-* Software Engineering @ Citadel
-* Software Engineering @ Facebook
-* Software Engineering @ Yelp
+* Software Engineering @ MemSQL, Query Optimization
+* Software Engineering @ Citadel, Execution Technology
+* Software Engineering @ Facebook, Applied Machine Learning
+* Software Engineering @ Yelp, Biz Money
 
 ### Education
 
