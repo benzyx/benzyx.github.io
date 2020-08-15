@@ -30,9 +30,13 @@ title: Home
 {% endif %}
 </span>
 
-    {{ post.content | smartify }}
-	
+    {{ post.excerpt }}
+	   
+    <a href="{{ post.url }}">Read more...</a>
+
   <br>
+
+  <!--
   <div class="tag-list">
   {% if post %}
   {% assign tags = post.tags %}
@@ -44,7 +48,7 @@ title: Home
   {% unless forloop.last %}&nbsp;{% endunless %}
   {% endfor %}
   </div>
-	
+	-->
   </article>
   {% endfor %}
 </div>
