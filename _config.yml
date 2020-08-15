@@ -6,6 +6,8 @@ paginate: 1
 baseurl: ""
 permalink: :title/
 
+markdown: kramdown
+
 kramdown:
     footnote_backlink: "&#10548;"
 
