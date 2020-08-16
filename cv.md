@@ -25,3 +25,13 @@ layout: page
 [2015 - 2020] **University of Waterloo**
 - Bachelors of Mathematics, Computer Science and Combinatorics/Optimization
 - CIBC National Scholarship
+
+### Accomplishments
+
+- International Olympiad in Informatics '14, '15 (Bronze)
+- International Olympiad of Linguistics '15 (Honorable Mention)
+- Waterloo ACM-ICPC 2015 - 2017, various top 5 finishes at locals/regionals.
+- USAMO '14, '15
+- Traders @ MIT 2020, 1st place Day of Competition, 2nd place overall
+- MIT Battlecode 2017, 2nd Place
+- Jane Street Electronic Trading Competition '16 (1st Place), '17 (1st Place)
