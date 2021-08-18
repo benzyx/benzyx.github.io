@@ -27,7 +27,7 @@ Here's a map of a few of these examples:
 - Path to Power (Audiobook) -> Walking to class in Waterloo 2020.
 - Most audiobooks actually map to something. Probably because they're unique?
 
-At first, I couldn't find anything for Facebook 2017. As I tried to hunt for examples, I remembered that I created a playlist on Spotify during this internship, that I played at work often, called (Gotta Code Faster!)[https://open.spotify.com/playlist/71fkmteVdFC2PWHC10w8J9?si=3c54acbf24b34be4]. The moment it started, and Running in the 90's hit, I remembered the few days before the midterm review when I was catching up on weeks of work on Caffe2.
+At first, I couldn't find anything for Facebook 2017. As I tried to hunt for examples, I remembered that I created a playlist on Spotify during this internship, that I played at work often, called (Gotta Code Faster)[https://open.spotify.com/playlist/71fkmteVdFC2PWHC10w8J9?si=3c54acbf24b34be4]. The moment it started, and Running in the 90's hit, I remembered the few days before the midterm review when I was catching up on weeks of work on Caffe2.
 
 I suspect the 4-month internship template is a huge contributing factor for this association. I usually spam albums for 1-2 months, and so large chunk of this unique 4-month experience is correlated with these albums, that I usually won't play much after my obsessions with them are done. Kanye's Graduation (specifically Homecoming), is a song that I played all the time in Chicago. But I don't have as strong feelings about it now, perhaps because I was in Chicago in two different internships, over a year apart? Or maybe I'm just overthinking it. 
 
