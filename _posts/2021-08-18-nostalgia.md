@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Nostalgia"
+title: "Nostalgia, ULTRA"
 date: 2021-08-18 04:00:00
 categories: [Life]
 ---
